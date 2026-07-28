@@ -1,0 +1,33 @@
+CLIMA AUTO - PANEL COMPLETO CON CARGA DE IMÁGENES
+
+CAMBIOS INTEGRADOS
+- Configuración: selección de logo y portada desde computadora o celular.
+- Servicios: selección de imagen desde el dispositivo.
+- Trabajos: selección de imagen principal desde el dispositivo.
+- Vista previa antes de guardar.
+- Validación de JPG, PNG y WebP con máximo de 5 MB.
+- Subida automática al bucket público SIS_AUTO.
+- Conservación de la imagen actual cuando no se selecciona una nueva.
+- Reemplazo seguro: primero guarda la nueva y luego elimina la anterior.
+- Eliminación del archivo de Storage al borrar Servicios o Trabajos.
+- La página pública continúa usando las mismas columnas URL y no cambia su lógica.
+
+PASOS
+1. En Supabase > SQL Editor ejecutá:
+   sql/storage-imagenes-panel.sql
+
+2. Confirmá que el bucket SIS_AUTO esté público y acepte:
+   image/jpeg, image/png, image/webp; máximo 5 MB.
+
+3. Instalá el proyecto con PowerShell:
+   powershell -ExecutionPolicy Bypass -File .\instalar.ps1
+
+4. Abrí C:\Users\EliteBook\Desktop\clima-auto con VS Code y Live Server.
+   Página pública: index.html
+   Panel: admin/login.html
+
+IMPORTANTE
+- Inicio no necesita selector de imágenes porque solo muestra el resumen del panel.
+- Configuración contiene dos imágenes: logo y portada.
+- Los enlaces públicos siguen guardándose internamente en logo_url, portada_url,
+  imagen_url e imagen_principal_url.

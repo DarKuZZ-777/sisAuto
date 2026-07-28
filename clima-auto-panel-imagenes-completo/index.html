@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Servicios profesionales de mantenimiento, diagnóstico y reparación de aire acondicionado automotriz."
+  >
+
+  <title>Clima Auto | Aire acondicionado automotriz</title>
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="./css/estilos.css">
+
+  <!-- Iconos de Bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+</head>
+
+<body>
+
+  <!-- =====================================================
+       ENCABEZADO
+  ====================================================== -->
+
+  <header class="encabezado" id="encabezado">
+    <div class="contenedor encabezado-contenido">
+
+      <a href="#inicio" class="marca">
+        <img
+          id="logo-negocio"
+          src="https://placehold.co/120x120/0f172a/38bdf8?text=CA"
+          alt="Logo del negocio"
+          class="marca-logo"
+        >
+
+        <div class="marca-texto">
+          <span id="nombre-negocio-header">
+            Clima Auto
+          </span>
+
+          <small id="eslogan-header">
+            Aire acondicionado automotriz
+          </small>
+        </div>
+      </a>
+
+      <button
+        type="button"
+        class="boton-menu"
+        id="boton-menu"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+
+      <nav class="navegacion" id="navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+
+        <a
+          href="#"
+          class="boton boton-whatsapp"
+          id="whatsapp-header"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-whatsapp"></i>
+          WhatsApp
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         PORTADA PRINCIPAL
+    ====================================================== -->
+
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+
+      <img
+        id="imagen-portada"
+        src="https://placehold.co/1600x900/0f172a/38bdf8?text=Clima+Auto"
+        alt="Servicio de aire acondicionado automotriz"
+        class="hero-imagen"
+      >
+
+      <div class="contenedor hero-contenido">
+        <p class="hero-etiqueta">
+          Especialistas en climatización automotriz
+        </p>
+
+        <h1 id="titulo-portada">
+          Mantenimiento y reparación de aire acondicionado automotriz
+        </h1>
+
+        <p id="descripcion-portada">
+          Diagnóstico, mantenimiento y reparación profesional para que
+          tu vehículo vuelva a enfriar correctamente.
+        </p>
+
+        <div class="hero-acciones">
+          <a
+            href="#"
+            class="boton boton-principal"
+            id="whatsapp-hero"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-whatsapp"></i>
+            Solicitar diagnóstico
+          </a>
+
+          <a
+            href="#servicios"
+            class="boton boton-secundario"
+          >
+            Ver servicios
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         SERVICIOS
+    ====================================================== -->
+
+    <section class="seccion" id="servicios">
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span class="seccion-etiqueta">
+            Lo que hacemos
+          </span>
+
+          <h2>Nuestros servicios</h2>
+
+          <p>
+            Soluciones para el diagnóstico, mantenimiento y reparación
+            del sistema de aire acondicionado de tu vehículo.
+          </p>
+        </div>
+
+        <div
+          class="rejilla-servicios"
+          id="lista-servicios"
+        >
+          <!-- Los servicios se generan desde servicios.js -->
+
+          <article class="tarjeta-carga">
+            <p>Cargando servicios...</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         TRABAJOS REALIZADOS
+    ====================================================== -->
+
+    <section class="seccion seccion-alternativa" id="trabajos">
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span class="seccion-etiqueta">
+            Experiencia comprobada
+          </span>
+
+          <h2>Trabajos realizados</h2>
+
+          <p>
+            Conocé algunos de los vehículos y sistemas que hemos atendido.
+          </p>
+        </div>
+
+        <div
+          class="rejilla-trabajos"
+          id="lista-trabajos"
+        >
+          <!-- Los trabajos se generan desde trabajos.js -->
+
+          <article class="tarjeta-carga">
+            <p>Cargando trabajos...</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         NOSOTROS
+    ====================================================== -->
+
+    <section class="seccion" id="nosotros">
+      <div class="contenedor nosotros-contenido">
+
+        <div class="nosotros-imagen-contenedor">
+          <img
+            id="imagen-nosotros"
+            src="https://placehold.co/1600x900/0f172a/38bdf8?text=Clima+Auto"
+            alt="Equipo de trabajo de Clima Auto"
+            class="nosotros-imagen"
+          >
+        </div>
+
+        <div class="nosotros-informacion">
+          <span class="seccion-etiqueta">
+            Sobre nosotros
+          </span>
+
+          <h2 id="titulo-nosotros">
+            Servicio profesional para tu vehículo
+          </h2>
+
+          <p id="descripcion-negocio">
+            Nos especializamos en diagnóstico, mantenimiento y
+            reparación de sistemas de aire acondicionado automotriz.
+          </p>
+
+          <div class="beneficios">
+
+            <article class="beneficio">
+              <i class="bi bi-tools"></i>
+
+              <div>
+                <h3>Diagnóstico profesional</h3>
+                <p>
+                  Evaluamos el sistema antes de realizar cualquier reparación.
+                </p>
+              </div>
+            </article>
+
+            <article class="beneficio">
+              <i class="bi bi-shield-check"></i>
+
+              <div>
+                <h3>Trabajo responsable</h3>
+                <p>
+                  Utilizamos procedimientos adecuados para cada vehículo.
+                </p>
+              </div>
+            </article>
+
+            <article class="beneficio">
+              <i class="bi bi-chat-dots"></i>
+
+              <div>
+                <h3>Atención directa</h3>
+                <p>
+                  Podés solicitar información y cotización por WhatsApp.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         CONTACTO
+    ====================================================== -->
+
+    <section class="seccion seccion-contacto" id="contacto">
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span class="seccion-etiqueta">
+            Contactanos
+          </span>
+
+          <h2>Agendá la revisión de tu vehículo</h2>
+
+          <p>
+            Escribinos para consultar disponibilidad, ubicación y servicios.
+          </p>
+        </div>
+
+        <div class="contacto-contenido">
+
+          <div class="contacto-informacion">
+
+            <article class="contacto-item">
+              <i class="bi bi-whatsapp"></i>
+
+              <div>
+                <h3>WhatsApp</h3>
+
+                <a
+                  href="#"
+                  id="whatsapp-contacto"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Consultar por WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <article class="contacto-item">
+              <i class="bi bi-telephone"></i>
+
+              <div>
+                <h3>Teléfono</h3>
+
+                <a
+                  href="#"
+                  id="telefono-negocio"
+                >
+                  No disponible
+                </a>
+              </div>
+            </article>
+
+            <article class="contacto-item">
+              <i class="bi bi-geo-alt"></i>
+
+              <div>
+                <h3>Dirección</h3>
+
+                <p id="direccion-negocio">
+                  Dirección pendiente
+                </p>
+              </div>
+            </article>
+
+            <article class="contacto-item">
+              <i class="bi bi-clock"></i>
+
+              <div>
+                <h3>Horario</h3>
+
+                <p id="horario-negocio">
+                  Horario pendiente
+                </p>
+              </div>
+            </article>
+
+            <article class="contacto-item">
+              <i class="bi bi-envelope"></i>
+
+              <div>
+                <h3>Correo</h3>
+
+                <a
+                  href="#"
+                  id="correo-negocio"
+                >
+                  Correo pendiente
+                </a>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="contacto-mapa">
+            <iframe
+              id="mapa-negocio"
+              title="Ubicación del negocio"
+              src=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div
+              id="mapa-placeholder"
+              class="mapa-placeholder"
+            >
+              <i class="bi bi-map"></i>
+              <p>La ubicación aparecerá aquí.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         REDES SOCIALES
+    ====================================================== -->
+
+    <section class="seccion redes-sociales" id="redes">
+      <div class="contenedor redes-contenido">
+
+        <div>
+          <span class="seccion-etiqueta">
+            Seguinos
+          </span>
+
+          <h2>Encontranos en redes sociales</h2>
+        </div>
+
+        <div class="redes-enlaces">
+
+          <a
+            href="#"
+            id="facebook-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            hidden
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a
+            href="#"
+            id="instagram-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            hidden
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a
+            href="#"
+            id="tiktok-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+            hidden
+          >
+            <i class="bi bi-tiktok"></i>
+          </a>
+
+          <a
+            href="#"
+            id="youtube-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            hidden
+          >
+            <i class="bi bi-youtube"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       PIE DE PÁGINA
+  ====================================================== -->
+
+  <footer class="pie-pagina">
+    <div class="contenedor pie-contenido">
+
+      <div>
+        <strong id="nombre-negocio-footer">
+          Clima Auto
+        </strong>
+
+        <p id="descripcion-footer">
+          Especialistas en aire acondicionado automotriz.
+        </p>
+      </div>
+
+      <p>
+        © <span id="anio-actual"></span>
+        <span id="copyright-negocio">Clima Auto</span>.
+        Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- =====================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+  ====================================================== -->
+
+  <a
+    href="#"
+    class="whatsapp-flotante"
+    id="whatsapp-flotante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+
+  <!-- =====================================================
+       MENSAJE GLOBAL DE ERROR
+  ====================================================== -->
+
+  <div
+    class="notificacion"
+    id="notificacion"
+    role="alert"
+    hidden
+  >
+    <span id="notificacion-mensaje"></span>
+
+    <button
+      type="button"
+      id="cerrar-notificacion"
+      aria-label="Cerrar notificación"
+    >
+      ×
+    </button>
+  </div>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <!-- Librería oficial de Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Conexión con Supabase -->
+  <script src="./js/supabase-config.js"></script>
+
+  <!-- Módulos públicos -->
+  <script src="./js/whatsapp.js"></script>
+  <script src="./js/configuracion.js"></script>
+  <script src="./js/servicios.js"></script>
+  <script src="./js/trabajos.js"></script>
+
+  <!-- Coordinador principal -->
+  <script src="./js/app.js"></script>
+
+</body>
+</html>

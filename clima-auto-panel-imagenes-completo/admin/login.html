@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Acceso administrativo de Clima Auto"
+  >
+
+  <title>Acceso administrativo | Clima Auto</title>
+
+  <link
+    rel="stylesheet"
+    href="../css/admin.css"
+  >
+</head>
+
+<body class="pagina-login">
+
+  <main class="login-contenedor">
+
+    <section
+      class="login-tarjeta"
+      aria-labelledby="titulo-login"
+    >
+
+      <div class="login-marca">
+        <a
+          href="../index.html"
+          class="login-logo"
+          aria-label="Volver al sitio principal"
+        >
+          <span class="login-logo-icono" aria-hidden="true">
+            ❄
+          </span>
+
+          <span>Clima Auto</span>
+        </a>
+      </div>
+
+      <div class="login-encabezado">
+
+        <span class="login-etiqueta">
+          Panel administrativo
+        </span>
+
+        <h1 id="titulo-login">
+          Iniciar sesión
+        </h1>
+
+        <p>
+          Ingresá tus credenciales para administrar el contenido
+          del sitio web.
+        </p>
+
+      </div>
+
+      <form
+        id="form-login"
+        class="login-formulario"
+        novalidate
+      >
+
+        <div class="campo-formulario">
+
+          <label for="correo">
+            Correo electrónico
+          </label>
+
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="administrador@correo.com"
+            autocomplete="email"
+            inputmode="email"
+            required
+          >
+
+          <small
+            id="error-correo"
+            class="mensaje-campo-error"
+            aria-live="polite"
+          ></small>
+
+        </div>
+
+        <div class="campo-formulario">
+
+          <label for="contrasena">
+            Contraseña
+          </label>
+
+          <div class="campo-contrasena">
+
+            <input
+              type="password"
+              id="contrasena"
+              name="contrasena"
+              placeholder="Escribí tu contraseña"
+              autocomplete="current-password"
+              required
+              minlength="6"
+            >
+
+            <button
+              type="button"
+              id="boton-ver-contrasena"
+              class="boton-ver-contrasena"
+              aria-label="Mostrar contraseña"
+              aria-pressed="false"
+            >
+              Mostrar
+            </button>
+
+          </div>
+
+          <small
+            id="error-contrasena"
+            class="mensaje-campo-error"
+            aria-live="polite"
+          ></small>
+
+        </div>
+
+        <div
+          id="mensaje-login"
+          class="mensaje-login"
+          role="alert"
+          aria-live="polite"
+          hidden
+        ></div>
+
+        <button
+          type="submit"
+          id="boton-login"
+          class="boton-login"
+        >
+          <span
+            id="texto-boton-login"
+            class="boton-login-texto"
+          >
+            Iniciar sesión
+          </span>
+
+          <span
+            id="spinner-login"
+            class="spinner-login"
+            aria-hidden="true"
+            hidden
+          ></span>
+        </button>
+
+      </form>
+
+      <div class="login-pie">
+
+        <a href="../index.html">
+          ← Volver al sitio web
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="../js/supabase-config.js"></script>
+
+  <script src="js/login.js"></script>
+
+</body>
+</html>
