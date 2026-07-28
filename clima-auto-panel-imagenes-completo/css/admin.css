@@ -621,3 +621,8 @@ textarea {
     height: 180px;
   }
 }
+.mensaje-exito {
+  color: #15803d;
+  background: #dcfce7;
+  border: 1px solid #86efac;
+}
